@@ -1,0 +1,28 @@
+set background=dark
+" Syntax highlighting
+syntax on
+
+" Show next match as you type each letter
+set incsearch
+
+set ignorecase
+" If both ignorecase and smartcase are set, Vim will ignore the case of the search only if the search pattern is all in lower-case. But if there are any upper-case characters in the search pattern, Vim will assume case-sensitive search and will do its matching accordingly.
+set smartcase
+
+" Insert space characters whenever the tab key is pressed
+set expandtab
+" :tabstop = :ts - number of spaces in a tab
+set ts=4
+set tabstop=4
+" Number of spaces to be inserted when indenting code
+set shiftwidth=4
+
+" Cursor will always be set number of linse off screen edge (gives context
+" when reading) 
+set scrolloff=2
+
+" Complete filenames
+" longest: type part of filename and press TAB - gives longest matching string then
+" press ENTER to accept or type from that point or ESC to cancel or TAB again
+" to show list of matching files (list option)
+set wildmode=longest,list
